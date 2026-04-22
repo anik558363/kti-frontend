@@ -2,60 +2,446 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Car Service</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KIT Frontend</title>
 
-  <!-- ======== Bootstrap css Link ======== -->
-  <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+  <link rel="shortcut icon" href="asset/images/logo/fav.ico" type="image/x-icon">
 
-  <!-- ======== Custom css Link ======== -->
-  <link rel="stylesheet" href="asset/css/style.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="asset/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="asset/css/all.min.css" />
+  <link rel="stylesheet" href="asset/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="asset/css/font.css" />
+  <link rel="stylesheet" href="asset/css/style.css" />
 
-  <!-- ======== Google Font Link ======== -->
-  <link rel="stylesheet" href="asset/css/font.css">
 
-  <!-- ======== Font Awesome Link ======== -->
-  <link rel="stylesheet" href="asset/css/all.min.css">
 
-  <!-- ========  Swiper Js Link ======== -->
-  <link rel="stylesheet" href="asset/css/swiper-bundle.min.css">
 </head>
 
 <body>
 
-  <!-- ========= Header Section Start ========= -->
-  <header>
+  <div class="site-wrapper">
+
+    <!-- Left Sidebar -->
+    <aside class="category-sidebar">
+      <div class="sidebar-inner">
+        <a href="#" class="sidebar-logo d-lg-none">
+          <img src="asset/images/logo.webp" alt="Logo">
+        </a>
+
+        <ul class="category-menu list-unstyled mb-0">
+          <li>
+            <a href="#">
+              <span class="category-icon"><i class="fa-solid fa-bag-shopping"></i></span>
+              <span class="category-text">Bags</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="category-icon"><i class="fa-solid fa-shoe-prints"></i></span>
+              <span class="category-text">Shoes</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="category-icon"><i class="fa-solid fa-shirt"></i></span>
+              <span class="category-text">Mens Clothing</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="category-icon"><i class="fa-solid fa-gem"></i></span>
+              <span class="category-text">Jewelry</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="category-icon"><i class="fa-solid fa-person-dress"></i></span>
+              <span class="category-text">Womens Clothing</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="category-icon"><i class="fa-solid fa-baby"></i></span>
+              <span class="category-text">Baby Items</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="category-icon"><i class="fa-solid fa-glasses"></i></span>
+              <span class="category-text">Eyewear</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="category-icon"><i class="fa-solid fa-briefcase"></i></span>
+              <span class="category-text">Office Supplies</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="category-icon"><i class="fa-solid fa-pump-soap"></i></span>
+              <span class="category-text">Beauty Products</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="category-icon"><i class="fa-solid fa-gift"></i></span>
+              <span class="category-text">Seasonal Products</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="sidebar-bottom-btns">
+          <a href="#" class="side-floating-btn active-btn">
+            <i class="fa-solid fa-arrow-down"></i>
+          </a>
+          <a href="#" class="side-floating-btn">
+            <i class="fa-regular fa-message"></i>
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+
+      <!-- Header -->
+      <header class="site-header">
+        <div class="container-fluid">
+          <div class="header-inner">
+
+            <div class="header-left">
+              <a href="#" class="main-logo">
+                <img src="asset/images/logo/logo.png" alt="Logo">
+              </a>
+            </div>
+
+            <div class="header-center">
+              <form class="search-form">
+                <input type="text" placeholder="Search by link">
+                <button type="button" class="camera-btn">
+                  <i class="fa-solid fa-camera"></i>
+                </button>
+                <button type="submit" class="search-btn">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </form>
+            </div>
+
+            <div class="header-right">
+              <a href="#" class="header-action"><i class="fa-regular fa-heart"></i></a>
+              <a href="#" class="header-action"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="#" class="signin-btn">
+                <i class="fa-regular fa-user"></i>
+                <span>Sign In</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="container-fluid">
+          <div class="hero-grid">
+
+            <!-- Left Banner -->
+            <div class="hero-side-banner">
+              <img src="asset/images/side_banner/side_banner1.webp" alt="Banner">
+            </div>
+
+            <!-- Center Slider -->
+            <div class="hero-slider-wrap">
+              <div class="swiper heroSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="asset/images/slider/slider1.png" alt="Slide 1">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="asset/images/slider/slider2.png" alt="Slide 2">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="asset/images/slider/slider3.png" alt="Slide 3">
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <!-- Right Banner -->
+            <div class="hero-side-banner">
+              <img src="asset/images/side_banner/side_banner2.webp" alt="Banner">
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Video / Info Section -->
+      <section class="info-video-section">
+        <div class="container-fluid">
+          <div class="row g-4">
+
+        
 
 
-   
-  </header>
-  <!-- ========= Header Section End ========= -->
+            <div class="col-lg-6">
+              <div class="content-box">
+                <div class="section-badge">How to order</div>
 
-  <main>
+                <div class="content-card-grid three-column">
+                  <div class="mini-content-card">
+                    <div class="mini-thumb">
+                      <img src="asset/images/workshop.webp" alt="Thumb">
+                    </div>
+                    <div class="mini-content">
+                      <h6>Supplier & Shipping</h6>
+                      <p>05/04/2026</p>
+                    </div>
+                  </div>
 
- 
+                  <div class="mini-content-card">
+                    <div class="mini-thumb">
+                      <img src="asset/images/workshop.webp" alt="Thumb">
+                    </div>
+                    <div class="mini-content">
+                      <h6>Import Solution</h6>
+                      <p>06/04/2026</p>
+                    </div>
+                  </div>
 
-<p>Lorem ipsuptas.</p>
+                  <div class="mini-content-card">
+                    <div class="mini-thumb">
+                      <img src="asset/images/workshop.webp" alt="Thumb">
+                    </div>
+                    <div class="mini-content">
+                      <h6>Best Import Tips</h6>
+                      <p>08/04/2026</p>
+                    </div>
+                  </div>
+                </div>
 
-  
+                <div class="content-nav-btns">
+                  <button type="button"><i class="fa-solid fa-angle-left"></i></button>
+                  <button type="button"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+              </div>
+            </div>
 
-  </main>
 
-  <!-- ========= Footer Section Start ========= -->
-  <footer>
-  
-  </footer>
-  <!-- ========= Footer Section End ========= -->
+            <div class="col-lg-6">
+              <div class="content-box">
+                <div class="section-badge">Hassle Free Import</div>
 
-  <!-- ======== Bootstrap js Link ======== -->
+                <div class="content-card-grid three-column">
+                  <div class="mini-content-card">
+                    <div class="mini-thumb">
+                      <img src="asset/images/workshop.webp" alt="Thumb">
+                    </div>
+                    <div class="mini-content">
+                      <h6>Supplier & Shipping</h6>
+                      <p>05/04/2026</p>
+                    </div>
+                  </div>
+
+                  <div class="mini-content-card">
+                    <div class="mini-thumb">
+                      <img src="asset/images/workshop.webp" alt="Thumb">
+                    </div>
+                    <div class="mini-content">
+                      <h6>Import Solution</h6>
+                      <p>06/04/2026</p>
+                    </div>
+                  </div>
+
+                  <div class="mini-content-card">
+                    <div class="mini-thumb">
+                      <img src="asset/images/workshop.webp" alt="Thumb">
+                    </div>
+                    <div class="mini-content">
+                      <h6>Best Import Tips</h6>
+                      <p>08/04/2026</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="content-nav-btns">
+                  <button type="button"><i class="fa-solid fa-angle-left"></i></button>
+                  <button type="button"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Product Section -->
+      <section class="product-section">
+        <div class="container-fluid">
+
+          <div class="section-title-wrap">
+            <h2 class="section-title">Ladies Bag</h2>
+            <div class="section-divider">
+              <span></span>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+              <div class="product-card">
+                <div class="product-thumb">
+                  <img src="asset/images/banner-img.webp" alt="Product">
+                </div>
+                <div class="product-info">
+                  <h6>Elegant Ladies Bag</h6>
+                  <p>Stylish imported bag for daily use.</p>
+                  <div class="product-meta">
+                    <span class="price">৳ 1,250</span>
+                    <a href="#" class="view-btn">View</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+              <div class="product-card">
+                <div class="product-thumb">
+                  <img src="asset/images/banner-img.webp" alt="Product">
+                </div>
+                <div class="product-info">
+                  <h6>Classic Shoulder Bag</h6>
+                  <p>Premium quality with modern design.</p>
+                  <div class="product-meta">
+                    <span class="price">৳ 1,550</span>
+                    <a href="#" class="view-btn">View</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+              <div class="product-card">
+                <div class="product-thumb">
+                  <img src="asset/images/banner-img.webp" alt="Product">
+                </div>
+                <div class="product-info">
+                  <h6>Mini Fashion Bag</h6>
+                  <p>Compact and trendy bag collection.</p>
+                  <div class="product-meta">
+                    <span class="price">৳ 1,100</span>
+                    <a href="#" class="view-btn">View</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+              <div class="product-card">
+                <div class="product-thumb">
+                  <img src="asset/images/banner-img.webp" alt="Product">
+                </div>
+                <div class="product-info">
+                  <h6>Luxury Hand Bag</h6>
+                  <p>Best quality imported hand bag.</p>
+                  <div class="product-meta">
+                    <span class="price">৳ 1,850</span>
+                    <a href="#" class="view-btn">View</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+              <div class="product-card">
+                <div class="product-thumb">
+                  <img src="asset/images/banner-img.webp" alt="Product">
+                </div>
+                <div class="product-info">
+                  <h6>Daily Use Bag</h6>
+                  <p>Comfortable and useful design.</p>
+                  <div class="product-meta">
+                    <span class="price">৳ 980</span>
+                    <a href="#" class="view-btn">View</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+              <div class="product-card">
+                <div class="product-thumb">
+                  <img src="asset/images/banner-img.webp" alt="Product">
+                </div>
+                <div class="product-info">
+                  <h6>Imported Tote Bag</h6>
+                  <p>Clean and attractive tote design.</p>
+                  <div class="product-meta">
+                    <span class="price">৳ 1,420</span>
+                    <a href="#" class="view-btn">View</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="site-footer">
+        <div class="container-fluid">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="footer-widget">
+                <h5>Contact</h5>
+                <p>House #00, Road #00, Dhaka, Bangladesh</p>
+                <p>support@example.com</p>
+                <p>+8801XXXXXXXXX</p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="footer-widget">
+                <h5>Customer</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">My Account</a></li>
+                  <li><a href="#">Order Tracking</a></li>
+                  <li><a href="#">Wishlist</a></li>
+                  <li><a href="#">Support</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="footer-widget">
+                <h5>Information</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms & Conditions</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <p class="mb-0">© 2026 All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <!-- JS -->
   <script src="asset/js/bootstrap.bundle.min.js"></script>
-
-  <!-- ======== Custom js Link ======== -->
-  <script src="asset/js/script.js"></script>
-
-  <!-- ======== Swiper js Link ======== -->
   <script src="asset/js/swiper-bundle.min.js"></script>
+  <script src="asset/js/script.js"></script>
 </body>
 
 </html>
