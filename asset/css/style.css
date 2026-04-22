@@ -1,0 +1,109 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #00a8e8;
+    --secondary-color: #007ea7;
+    --bg-light: #003459;
+    --bg-dark: #00171f;
+    --white-color: #ffffff;
+    --light-color: #cecece;
+
+    /* Gradient Color */
+
+}
+
+body {
+    background: -moz-linear-gradient(90deg, var(--white-color) 0%, var(--white-color) 100%);
+    background: -webkit-linear-gradient(90deg, var(--white-color) 0%, var(--white-color) 100%);
+    background: linear-gradient(90deg, var(--white-color) 0%, var(--white-color) 100%);
+    font-family: "Poppins", "sans-serif";
+}
+
+a,
+a:focus {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-size: 16px;
+    margin: 0;
+}
+
+input,
+input:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.btn {
+    outline: none;
+    border: none;
+}
+
+.btn-primary {
+    padding: 10px 24px;
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 10px 0 10px 0;
+    transition: all .5 ease-in-out;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+section {
+    padding-top: 70px;
+}
+
+
+/* ---------------------------------------
+Style Section
+--------------------------------------- */
+
+
+
+
+
+
+
+/* ---------------------------------------
+Responsive Section
+--------------------------------------- */
+
+/* ========= Laptop Device ========== */
+
+@media (max-width: 1400px) {}
+
+/* ========= Tablet Device ========== */
+
+@media (max-width: 993px) {}
+
+/* ========= Mobile Device ========== */
+
+@media (max-width: 768px) {}
